@@ -1,0 +1,418 @@
+body
+{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#progress
+{
+    position: fixed;
+    top: 0;
+    width: 0%;
+    background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+    height: 1em;
+    border-radius: 10px;
+
+
+    animation: progress-grow auto linear ;
+    animation-timeline: scroll(root block);
+   
+}
+
+@keyframes progress-grow{
+    from {
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.titulo img
+{
+    
+    
+    border-radius: 10px;
+    position:fixed;
+    justify-content: center;
+    padding: 10px;
+    margin:10px ;
+
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0px 350px;
+    z-index: 1;
+}
+@keyframes enhance-header {
+    from {
+        border-radius: 10px;
+        width: 350px;
+       justify-content: center;
+    }
+    to {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur (5px);
+        border-radius: 10px;
+        width: 150px;
+        
+    }
+}
+
+
+.header
+{
+    margin: 10px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: xx-large;
+}
+
+.intro h1
+{
+font-style: oblique;
+padding: 20px;
+}
+
+.intro h4
+{
+    font-size: small;
+    font-style: italic;
+    padding: 10px;
+    margin: 10px;
+}
+
+.propuesta 
+{
+    text-align: center;
+    padding: 20px;
+    padding-top: 90px;
+    margin: 10px;
+    font-size: xx-large;
+}
+
+.propuesta h2
+{
+   font-style: oblique; 
+}
+
+.propuesta p
+{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+
+.swiper
+{
+    padding: 150px 0px 50px 0px;
+    width: 100%;
+
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 50%;
+    z-index: 1;
+
+}
+
+
+@keyframes reveal {
+    from { 
+        opacity: 0;
+    }
+
+    to { 
+        opacity: 1;
+    }
+}
+
+.swiper-slide
+{
+    width: 350px;
+    height: 550px;
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.icons
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.icons i
+{
+font-size: 20px;
+color: aliceblue;
+display: flex;
+}
+
+.icons img
+{
+    width: 100px;
+    padding: 10px;
+    
+}
+
+.product-content
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-text
+{
+    flex-basis: 70%;
+    text-align: left;
+}
+
+.product-text span
+{
+font-size: 25px;
+color: black;
+font-weight: bold;
+padding: 10px;
+}
+
+.span1
+{
+    text-decoration: line-through;
+}
+
+.product-text h3
+{
+font-size: 20px;
+color: white;
+text-transform: uppercase;
+padding: 10px;
+}
+
+.product-text p
+{
+    color: black;
+    font-size: 10px;
+    align-content: center;
+    padding: 10px; 
+}
+
+.product-img
+{
+    flex-basis: 25%;
+    text-align: right;
+
+}
+
+.product-img img
+{
+width: 170px;
+border-radius: 10px;
+}
+
+.btn-1
+{
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid rgb(195, 9, 195);
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.seccion
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+
+  }
+
+  .form
+  {
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #popup::backdrop
+  {
+  background-color: rgba(0, 0, 0, .55);
+  }
+
+  #popup 
+  {
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    border-radius: 10px;
+    border-color: white;
+  }
+
+  .seccion2
+{
+    background-color: whitesmoke;
+    margin: 150px;
+    margin-bottom: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    position: static;
+
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 40%;
+    z-index: 1;
+
+
+}
+
+.text6
+{
+    text-align: center;
+    font-size: x-large;
+    font-style: oblique;
+    margin: 10px;
+}
+
+.text7
+{
+    text-align: center;
+    font-size: larger;
+    font-style: oblique;
+}
+
+.crud--table
+{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.table--header
+{
+    border: 1px solid gray;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.button 
+{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all, 0.3s ;
+    margin: 10px;
+    justify-content: space-around;
+    font-style: normal;
+}
+
+
+.button--secondary
+{
+  background-color:black;
+  color: white;
+}
+
+.button--tertiary
+{
+    background-color: rgb(52, 16, 52);
+    color: white;
+}
+footer
+{
+    color: rgb(11, 11, 11);
+    font-size: larger;
+    font-style: oblique;
+    text-align: center;
+    margin: 10px;
+    
+}
+ 
+
+.cont
+{
+    display: flex;
+    font-size: 30px;
+    gap: 20px;
+    justify-content: center;
+    transition: all ease 300ms;
+}
+
+.cont :hover
+{
+    transform: scale(1.2);
+}
+
+
+
+.github
+{
+ color: rgb(0, 0, 0);
+}
+
+.facebook
+{
+    color: blue;
+}
+
+.twitter
+{
+    color: rgb(0, 0, 0);
+}
+
+.instagram
+{
+  color: black
+}
+
+.tiktok 
+{
+    color: black;
+}
+
+.incentivo
+{
+    padding-top: 90px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.incentivo h3
+{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+.incentivo h4
+{
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+    margin: 10px;
+}
+
+.incentivo h5
+{
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+    margin: 10px;
+    font-style: italic;
+    font-size: small;
+}
